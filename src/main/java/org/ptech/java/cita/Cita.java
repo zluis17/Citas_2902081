@@ -1,6 +1,8 @@
 package org.ptech.java.cita;
 import java.time.LocalDateTime;
 
+import org.ptech.java.cita.enums.EstadoCita;
+
 
 public class Cita {
 

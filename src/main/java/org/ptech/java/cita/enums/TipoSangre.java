@@ -1,4 +1,4 @@
-package org.ptech.java.cita;
+package org.ptech.java.cita.enums;
 
 public enum TipoSangre {
     A,
