@@ -8,15 +8,20 @@ import org.ptech.java.cita.enums.TipoDocumento;
 //clase base
 
 
-public abstract class usuario {
+public  class usuario {
 
-    // atributos a heredarse deben ser protec
+    // atributos a heredarse deben ser protected
 
 protected int id;
 protected String nombres;
 protected String apellidos;
 protected TipoDocumento tipoDocumento;
 protected Long numeroDocumento;
+
+//sobreescrbir el metodo toString
+
+
+
 
 
 public usuario(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroDocumento) {
@@ -26,6 +31,13 @@ public usuario(int id, String nombres, String apellidos, TipoDocumento tipoDocum
     this.tipoDocumento = tipoDocumento;
     this.numeroDocumento = numeroDocumento;
     
+}
+
+
+@Override
+public String toString() {
+    return "usuario [id=" + id + ", nombres=" + nombres + ", apellidos=" + apellidos + ", tipoDocumento="
+            + tipoDocumento + ", numeroDocumento=" + numeroDocumento + "]";
 }
 
 

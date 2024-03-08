@@ -17,7 +17,7 @@ private char factorRH;
 
 
 public Paciente(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroDocumento,
-        String email, Long celular, LocalDate fechaNacimiento, Double altura, Double peso, TipoSangre tipoSangre,
+        String email, Long celular, LocalDate fechaNacimiento, Double altura, int i, TipoSangre tipoSangre,
         char factorRH) {
     super(id, nombres, apellidos, tipoDocumento, numeroDocumento);
     this.email = email;
@@ -35,10 +35,19 @@ public Paciente(int id, String nombres, String apellidos, TipoDocumento tipoDocu
 public Paciente(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroDocumento) {
     super(id, nombres, apellidos, tipoDocumento, numeroDocumento);
 
+    
 
 
 
 
+
+}
+
+
+@Override
+public String toString() {
+    return "Paciente [email=" + email + ", celular=" + celular + ", fechaNacimiento=" + fechaNacimiento + ", altura="
+            + altura + ", peso=" + peso + ", tipoSangre=" + tipoSangre + ", factorRH=" + factorRH + "id:" + super.id + "nombres:" + super.nombres + "Apellidos:" + super.apellidos + "TipoDocumento:" + super.tipoDocumento + "numeroDocumento:" + super.numeroDocumento + "]";
 }
 
 

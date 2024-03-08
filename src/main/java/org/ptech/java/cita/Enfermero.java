@@ -9,6 +9,8 @@ public class Enfermero extends usuario {
     private List <String> procedimientos;
 
     public Enfermero(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroDocumento) {
+
+        
         
        
        // llamar al constructor de
@@ -19,6 +21,11 @@ public class Enfermero extends usuario {
 
         this.procedimientos = new ArrayList<String>();
 
+    }
+
+    @Override
+    public String toString() {
+        return "Enfermero [procedimientos=" + procedimientos + "id:" + super.id + "nombres:" + super.nombres + "Apellidos:" + super.apellidos + "TipoDocumento:" + super.tipoDocumento + "numeroDocumento:" + super.numeroDocumento + "]";
     }
 
     public void addProcedure (String procedure){

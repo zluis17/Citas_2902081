@@ -28,9 +28,11 @@ public class Main {
         //recorrer los procedimientos de e1
         for (   String p  :e1.getProcedimientos()){
             System.out.println("procedimientos:" + p);
+            
 
 
         }
+
 
 
 
