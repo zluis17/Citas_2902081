@@ -1,10 +1,15 @@
 package org.ptech.java.cita;
 
+import java.time.LocalDateTime;
+
 public class Consultorio {
 
     private int id;
     private String direccion;
     private int numero;
+    private LocalDateTime fecha;
+    private  int consultorio;
+    
 
     
 
@@ -19,10 +24,20 @@ public class Consultorio {
     }
 
 
-    public Consultorio(int id, String direccion, int numero) {
+    
+    
+
+
+   
+
+   
+
+    public Consultorio(int id, String direccion, int numero, LocalDateTime fecha, int consultorio) {
         this.id = id;
         this.direccion = direccion;
         this.numero = numero;
+        this.fecha = fecha;
+        this.consultorio = consultorio;
     }
 
 
@@ -55,6 +70,34 @@ public class Consultorio {
         this.numero = numero;
     }
 
+
+    public LocalDateTime getFecha() {
+        return fecha;
+    }
+
+
+    public void setFecha(LocalDateTime fecha) {
+        this.fecha = fecha;
+    }
+
+
+    public int getConsultorio() {
+        return consultorio;
+    }
+
+
+    public void setConsultorio(int consultorio) {
+        this.consultorio = consultorio;
+    }
+
+
+    public String getEstado() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getEstado'");
+    }
+
+
+    
     
 
 

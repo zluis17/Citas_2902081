@@ -1,6 +1,7 @@
 package org.ptech.java.cita;
 import java.time.LocalDate;
 
+import org.ptech.java.cita.enums.Motivo;
 import org.ptech.java.cita.enums.TipoDocumento;
 import org.ptech.java.cita.enums.TipoSangre;
 
@@ -14,6 +15,7 @@ private Double altura;
 private Double peso;
 private TipoSangre tipoSangre;
 private char factorRH;
+private Motivo motivo;
 
 
 public Paciente(int id, String nombres, String apellidos, TipoDocumento tipoDocumento, Long numeroDocumento,
@@ -24,9 +26,10 @@ public Paciente(int id, String nombres, String apellidos, TipoDocumento tipoDocu
     this.celular = celular;
     this.fechaNacimiento = fechaNacimiento;
     this.altura = altura;
-    this.peso = peso;
     this.tipoSangre = tipoSangre;
     this.factorRH = factorRH;
+    this.motivo = motivo;
+
 
     
 }
@@ -119,6 +122,19 @@ public char getFactorRH() {
 public void setFactorRH(char factorRH) {
     this.factorRH = factorRH;
 }
+
+
+public Motivo getMotivo() {
+    return motivo;
+}
+
+
+public void setMotivo(Motivo motivo) {
+    this.motivo = motivo;
+}
+
+
+
 
 
 

@@ -9,16 +9,18 @@ public class Cita {
     int id;
      LocalDateTime fecha;
      Consultorio consultorio;
-     paciente;
-    public Cita() {
+     Paciente paciente;
+    public Cita(int id2, LocalDateTime fecha2, Paciente paciente2, Enfermero e2) {
 
         
     }
-    public Cita(int id, LocalDateTime fecha, Paciente paciente,Consultorio consultorio) {
+    public Cita(int id, LocalDateTime fecha, Paciente paciente,Consultorio e2) {
         this.id = id;
         this.fecha = fecha;
-        this.consultorio = consultorio;
+        this.consultorio = e2;
         this.paciente = paciente;
+
+
 
 
         
